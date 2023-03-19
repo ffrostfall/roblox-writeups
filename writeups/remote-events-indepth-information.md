@@ -13,11 +13,15 @@ Just a bit of information to start off with: You can press Shift F3 and then Shi
 Roblox does networking per frame- this means that networking is not handled *instantly*, but rather when a packet arrives, it's deferred to the next frame. Most games use end-to-end latency when they show ping (csgo, Minecraft, etc.). It's **not** RTT (round trip time).
 
 Shift F3:
+
 ![image](https://user-images.githubusercontent.com/80861876/226212846-f609e6c8-4866-444c-9ab5-7fd8de62b6c3.png)
+
 The ping you see in this image (62.56ms) is after frame desync- it factors in your framerate, pretty much. And yes, this means when the client/server drops below 60fps, ping will increase. It also means that using an FPS unlocker will decrease ping.
 
 Shift F3 + Shift 1:
+
 ![image](https://user-images.githubusercontent.com/80861876/226212851-debdf7af-a973-4b5c-95af-c6acc9009bf8.png)
+
 The ping you see in this image (25ms) is without frame desync in mind.
 
 ---
@@ -32,7 +36,9 @@ Another important thing to keep in mind, *that Roblox will throttle networking i
 There's a queue for RemoteEvents when a RemoteEvent is fired, but there is no listener. This is a *small* queue, and it should not be relied upon as you can lose important data. It *does* drop remote events, and fast-firing events will devastate this queue.
 
 Sources:
+
 ![image](https://user-images.githubusercontent.com/80861876/226212865-16ae9193-1fab-450c-98c7-e452e242dcb5.png)
+
 *(quick note, while it does say it "doesn't happen every frame" this is not my experience. I've taken microprofiler logs a lot, and it has happened every frame. so please keep that in mind. However at the same time, I may be wrong. )*
 
 ![image](https://user-images.githubusercontent.com/80861876/226212868-099ebda0-fd2f-4d94-a6c8-225802e26213.png)
