@@ -41,6 +41,6 @@ Roblox:
 ![image](https://user-images.githubusercontent.com/80861876/228321062-76bedd2a-12e4-4a71-b986-de123280fc80.png)
 
 
-BridgeNet2:
+The format:
 
 ![image](https://user-images.githubusercontent.com/80861876/228321084-5d9d1f88-1bea-4c4a-ae3b-941218d7170d.png)
