@@ -36,6 +36,7 @@ This means 9 bytes per "remote" call can be reduced using a specific data struct
 ```
 
 Using this format results in the following benchmark:
+
 Roblox:
 
 ![image](https://user-images.githubusercontent.com/80861876/228321062-76bedd2a-12e4-4a71-b986-de123280fc80.png)
