@@ -29,16 +29,18 @@ This means 9 bytes per "remote" call can be reduced using a specific data struct
     {A, B, C} -- An individual call: Remote:Fire({ A, B, C })
   } -- Array, indexes are free with no cost.
   [ID2] = {
-    {A, B, C} - :Fire({A, B, C})
-    {D, E, F} - :Fire({D, E, F})
+    {A, B, C} -- :Fire({A, B, C})
+    {D, E, F} -- :Fire({D, E, F})
   }
 } -- Dictionary
 ```
 
 Using this format results in the following benchmark:
 Roblox:
+
 ![image](https://user-images.githubusercontent.com/80861876/228321062-76bedd2a-12e4-4a71-b986-de123280fc80.png)
 
 
 BridgeNet2:
+
 ![image](https://user-images.githubusercontent.com/80861876/228321084-5d9d1f88-1bea-4c4a-ae3b-941218d7170d.png)
